@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyecto 2024\\LaboratorioAppweb\\LaboratorioAppweb\\LaboratorioAppweb.csproj": {}
+    "C:\\Users\\Octavio Gonzalez\\Documents\\LabAppWeb\\LaboratorioAppweb\\LaboratorioAppweb.csproj": {}
   },
   "projects": {
-    "D:\\Proyecto 2024\\LaboratorioAppweb\\LaboratorioAppweb\\LaboratorioAppweb.csproj": {
+    "C:\\Users\\Octavio Gonzalez\\Documents\\LabAppWeb\\LaboratorioAppweb\\LaboratorioAppweb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyecto 2024\\LaboratorioAppweb\\LaboratorioAppweb\\LaboratorioAppweb.csproj",
+        "projectUniqueName": "C:\\Users\\Octavio Gonzalez\\Documents\\LabAppWeb\\LaboratorioAppweb\\LaboratorioAppweb.csproj",
         "projectName": "LaboratorioAppweb",
-        "projectPath": "D:\\Proyecto 2024\\LaboratorioAppweb\\LaboratorioAppweb\\LaboratorioAppweb.csproj",
-        "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyecto 2024\\LaboratorioAppweb\\LaboratorioAppweb\\obj\\",
+        "projectPath": "C:\\Users\\Octavio Gonzalez\\Documents\\LabAppWeb\\LaboratorioAppweb\\LaboratorioAppweb.csproj",
+        "packagesPath": "C:\\Users\\Octavio Gonzalez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Octavio Gonzalez\\Documents\\LabAppWeb\\LaboratorioAppweb\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Octavio Gonzalez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
