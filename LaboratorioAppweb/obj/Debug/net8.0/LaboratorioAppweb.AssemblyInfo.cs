@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LaboratorioAppweb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ad75c300d5cee81eea384d7d21575b116d08da0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd73499bdb80f5987fb336cfdca0550b8b26708a")]
 [assembly: System.Reflection.AssemblyProductAttribute("LaboratorioAppweb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LaboratorioAppweb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
