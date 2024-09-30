@@ -1,0 +1,666 @@
+[
+  {
+    "ContainingType": "LaboratorioApi.Controllers.ComandaController",
+    "Method": "Create",
+    "RelativePath": "api/Comanda",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comandaDTO",
+        "Type": "LaboratorioWeb.DTO.ComandaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.ComandaController",
+    "Method": "GetById",
+    "RelativePath": "api/Comanda/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.ComandaController",
+    "Method": "Update",
+    "RelativePath": "api/Comanda/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "comandaDTO",
+        "Type": "LaboratorioWeb.DTO.ComandaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.EmpleadoController",
+    "Method": "Create",
+    "RelativePath": "api/Empleado",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empleadoDTO",
+        "Type": "LaboratorioWeb.DTO.EmpleadoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.EmpleadoController",
+    "Method": "GetById",
+    "RelativePath": "api/Empleado/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.EmpleadoController",
+    "Method": "Update",
+    "RelativePath": "api/Empleado/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "empleadoDTO",
+        "Type": "LaboratorioWeb.DTO.EmpleadoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.EmpleadoController",
+    "Method": "Delete",
+    "RelativePath": "api/Empleado/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.EstadoMesaController",
+    "Method": "GetAll",
+    "RelativePath": "api/EstadoMesa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.EstadoMesaController",
+    "Method": "Create",
+    "RelativePath": "api/EstadoMesa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estadoMesaDTO",
+        "Type": "LaboratorioWeb.DTO.EstadoMesaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.EstadoMesaController",
+    "Method": "GetById",
+    "RelativePath": "api/EstadoMesa/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.EstadoMesaController",
+    "Method": "Update",
+    "RelativePath": "api/EstadoMesa/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estadoMesaDTO",
+        "Type": "LaboratorioWeb.DTO.EstadoMesaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.EstadoMesaController",
+    "Method": "Delete",
+    "RelativePath": "api/EstadoMesa/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratoriApi.Controllers.EstadoPedidoController",
+    "Method": "GetAll",
+    "RelativePath": "api/EstadoPedido",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratoriApi.Controllers.EstadoPedidoController",
+    "Method": "Create",
+    "RelativePath": "api/EstadoPedido",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estadoPedidoDTO",
+        "Type": "LaboratorioWeb.DTO.EstadoPedidoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratoriApi.Controllers.EstadoPedidoController",
+    "Method": "GetById",
+    "RelativePath": "api/EstadoPedido/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratoriApi.Controllers.EstadoPedidoController",
+    "Method": "Update",
+    "RelativePath": "api/EstadoPedido/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estadoDTO",
+        "Type": "LaboratorioWeb.DTO.EstadoPedidoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratoriApi.Controllers.EstadoPedidoController",
+    "Method": "Delete",
+    "RelativePath": "api/EstadoPedido/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.MesaController",
+    "Method": "GetAll",
+    "RelativePath": "api/Mesa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.MesaController",
+    "Method": "Create",
+    "RelativePath": "api/Mesa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mesaDTO",
+        "Type": "LaboratorioWeb.DTO.MesaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.MesaController",
+    "Method": "GetById",
+    "RelativePath": "api/Mesa/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.MesaController",
+    "Method": "UpdateEstado",
+    "RelativePath": "api/Mesa/{id}/estado",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nuevoEstado",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.PedidoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Pedido",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.PedidoController",
+    "Method": "Create",
+    "RelativePath": "api/Pedido",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pedido",
+        "Type": "LaboratorioWeb.DTO.PedidoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.PedidoController",
+    "Method": "GetById",
+    "RelativePath": "api/Pedido/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.PedidoController",
+    "Method": "UpdateEstado",
+    "RelativePath": "api/Pedido/{id}/estado",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nuevoEstado",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.PedidoController",
+    "Method": "GetEstadoPedidos",
+    "RelativePath": "api/Pedido/estado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.ProductoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Producto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.ProductoController",
+    "Method": "Create",
+    "RelativePath": "api/Producto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productoDTO",
+        "Type": "LaboratorioWeb.DTO.ProductoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.ProductoController",
+    "Method": "GetById",
+    "RelativePath": "api/Producto/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.ProductoController",
+    "Method": "Update",
+    "RelativePath": "api/Producto/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "productoDTO",
+        "Type": "LaboratorioWeb.DTO.ProductoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.ProductoController",
+    "Method": "Delete",
+    "RelativePath": "api/Producto/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.RolController",
+    "Method": "GetAll",
+    "RelativePath": "api/Rol",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.RolController",
+    "Method": "Create",
+    "RelativePath": "api/Rol",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rolDTO",
+        "Type": "LaboratorioWeb.DTO.RolDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.RolController",
+    "Method": "GetById",
+    "RelativePath": "api/Rol/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.RolController",
+    "Method": "Update",
+    "RelativePath": "api/Rol/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "rolDTO",
+        "Type": "LaboratorioWeb.DTO.RolDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.RolController",
+    "Method": "Delete",
+    "RelativePath": "api/Rol/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.SectorController",
+    "Method": "CrearSector",
+    "RelativePath": "api/Sector",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sectorDTO",
+        "Type": "LaboratorioWeb.DTO.SectorDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.SectorController",
+    "Method": "AsignarEmpleadoASector",
+    "RelativePath": "api/Sector/{EmpleadoId}/asignar-sector/{SectorId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpleadoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "SectorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.SectorController",
+    "Method": "EditarSector",
+    "RelativePath": "api/Sector/{SectorId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SectorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sectorDTO",
+        "Type": "LaboratorioWeb.DTO.SectorDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.SectorController",
+    "Method": "EliminarSector",
+    "RelativePath": "api/Sector/{SectorId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SectorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaboratorioApi.Controllers.SectorController",
+    "Method": "VerEmpleadosPorSector",
+    "RelativePath": "api/Sector/{SectorId}/empleados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SectorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
