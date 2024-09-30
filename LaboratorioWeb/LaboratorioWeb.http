@@ -1,6 +1,0 @@
-@LaboratorioWeb_HostAddress = http://localhost:5260
-
-GET {{LaboratorioWeb_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
