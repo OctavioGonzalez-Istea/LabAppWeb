@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace LaboratorioWeb.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class inicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -286,9 +286,9 @@ namespace LaboratorioWeb.Migrations
                 columns: new[] { "PedidoId", "Cantidad", "ComandaId", "EstadoId", "FechaCreacion", "FechaFinalizacion", "ProductoId" },
                 values: new object[,]
                 {
-                    { 1, 2, 1, 1, new DateTime(2024, 9, 27, 20, 26, 38, 256, DateTimeKind.Local).AddTicks(4646), null, 1 },
-                    { 2, 2, 2, 2, new DateTime(2024, 9, 27, 20, 26, 38, 256, DateTimeKind.Local).AddTicks(4659), new DateTime(2024, 9, 27, 20, 56, 38, 256, DateTimeKind.Local).AddTicks(4660), 1 },
-                    { 3, 2, 3, 3, new DateTime(2024, 9, 27, 20, 26, 38, 256, DateTimeKind.Local).AddTicks(4665), new DateTime(2024, 9, 27, 20, 46, 38, 256, DateTimeKind.Local).AddTicks(4665), 1 }
+                    { 1, 2, 1, 1, new DateTime(2024, 9, 28, 15, 31, 57, 22, DateTimeKind.Local).AddTicks(7665), null, 1 },
+                    { 2, 2, 2, 2, new DateTime(2024, 9, 28, 15, 31, 57, 22, DateTimeKind.Local).AddTicks(7684), new DateTime(2024, 9, 28, 16, 1, 57, 22, DateTimeKind.Local).AddTicks(7685), 1 },
+                    { 3, 2, 3, 3, new DateTime(2024, 9, 28, 15, 31, 57, 22, DateTimeKind.Local).AddTicks(7691), new DateTime(2024, 9, 28, 15, 51, 57, 22, DateTimeKind.Local).AddTicks(7691), 1 }
                 });
 
             migrationBuilder.CreateIndex(

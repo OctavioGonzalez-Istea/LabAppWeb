@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb.csproj": {}
+    "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb.csproj": {
+    "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb.csproj",
         "projectName": "LaboratorioWeb",
-        "projectPath": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb.csproj",
+        "projectPath": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb.csproj",
         "packagesPath": "C:\\Users\\Octavio Gonzalez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\obj\\",
+        "outputPath": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,10 +53,6 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
-            },
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

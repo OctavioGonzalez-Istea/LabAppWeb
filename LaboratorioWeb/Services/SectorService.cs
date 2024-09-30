@@ -1,10 +1,11 @@
 ﻿using Entidades;
 using LaboratorioApi.Data;
+using LaboratorioWeb.Services.Interfase;
 using Microsoft.EntityFrameworkCore;
 
 namespace LaboratorioApi.Services
 {
-    public class SectorService
+    public class SectorService : ISectorService
     {
         private readonly RestauranteContext _context;
 
@@ -22,9 +23,9 @@ namespace LaboratorioApi.Services
         }
 
         // Editar un sector existente
-        public async Task<bool> EditarSectorAsync(int SectorId, Sector sectorActualizado)
+        public async Task<bool> EditarSectorAsync(int sectorId, Sector sectorActualizado)
         {
-            var sector = await _context.Sectores.FindAsync(SectorId);
+            var sector = await _context.Sectores.FindAsync(sectorId);
             if (sector == null) return false;
 
             // Actualizamos las propiedades del sector
@@ -35,9 +36,9 @@ namespace LaboratorioApi.Services
         }
 
         // Eliminar un sector
-        public async Task<bool> EliminarSectorAsync(int SectorId)
+        public async Task<bool> EliminarSectorAsync(int sectorId)
         {
-            var sector = await _context.Sectores.FindAsync(SectorId);
+            var sector = await _context.Sectores.FindAsync(sectorId);
             if (sector == null) return false;
 
             _context.Sectores.Remove(sector);
@@ -46,25 +47,25 @@ namespace LaboratorioApi.Services
         }
 
         // Asignar un empleado a un sector
-        public async Task<bool> AsignarEmpleadoASectorAsync(int EmpleadoId, int SectorId)
+        public async Task<bool> AsignarEmpleadoASectorAsync(int empleadoId, int sectorId)
         {
-            var empleado = await _context.Empleados.FindAsync(EmpleadoId);
-            var sector = await _context.Sectores.FindAsync(SectorId);
+            var empleado = await _context.Empleados.FindAsync(empleadoId);
+            var sector = await _context.Sectores.FindAsync(sectorId);
 
             if (empleado == null || sector == null) return false;
 
             // Asignamos el sector al empleado
-            empleado.SectorId = SectorId;
+            empleado.SectorId = sectorId;
 
             await _context.SaveChangesAsync();
             return true;
         }
 
         // Ver empleados por sector
-        public async Task<List<Empleado>> VerEmpleadosPorSectorAsync(int SectorId)
+        public async Task<List<Empleado>> VerEmpleadosPorSectorAsync(int sectorId)
         {
             return await _context.Empleados
-                                 .Where(e => e.SectorId == SectorId)
+                                 .Where(e => e.SectorId == sectorId)
                                  .ToListAsync();
         }
     }

@@ -19,11 +19,6 @@ public class Pedido
     public required Comanda Comanda { get; set; }
     public required Producto Producto { get; set; }
     public required EstadoPedido EstadoPedido { get; set; }
-
-        //public void ActualizarEsatdoPedido()
-        //{
-        //    this.EstadoPedido = 
-        //}
-    }
+ }
 
 }

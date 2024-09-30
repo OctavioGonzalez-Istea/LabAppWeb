@@ -1,6 +1,9 @@
 ﻿using Entidades;
 using Microsoft.AspNetCore.Mvc;
 using LaboratorioApi.Services;
+using AutoMapper;
+using LaboratorioWeb.DTO;
+using LaboratorioWeb.Services.Interfase;
 
 namespace LaboratorioApi.Controllers
 {
@@ -8,11 +11,13 @@ namespace LaboratorioApi.Controllers
     [Route("api/[controller]")]
     public class PedidoController : ControllerBase
     {
-        private readonly PedidoService _pedidoService;
+        private readonly IPedidoService _pedidoService; // Usar la interfaz en lugar del servicio directamente
+        private readonly IMapper _mapper;
 
-        public PedidoController(PedidoService pedidoService)
+        public PedidoController(IPedidoService pedidoService, IMapper mapper)
         {
             _pedidoService = pedidoService;
+            _mapper = mapper;
         }
 
         // Obtener todos los pedidos
@@ -20,7 +25,8 @@ namespace LaboratorioApi.Controllers
         public async Task<IActionResult> GetAll()
         {
             var pedidos = await _pedidoService.GetAllPedidosAsync();
-            return Ok(pedidos);
+            var pedidosDTO = _mapper.Map<List<PedidoDTO>>(pedidos);  // Mapear a DTO
+            return Ok(pedidosDTO);
         }
 
         // Obtener un pedido por ID
@@ -29,15 +35,16 @@ namespace LaboratorioApi.Controllers
         {
             var pedido = await _pedidoService.GetPedidoByIdAsync(id);
             if (pedido == null) return NotFound();
-            return Ok(pedido);
+            var pedidoDTO = _mapper.Map<PedidoDTO>(pedido);  // Mapear a DTO
+            return Ok(pedidoDTO);
         }
 
         // Crear un nuevo pedido
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Pedido pedido)
+        public async Task<IActionResult> Create([FromBody] PedidoDTO pedido)
         {
-            var nuevoPedido = await _pedidoService.CreatePedidoAsync(pedido);
-            return CreatedAtAction(nameof(GetById), new { id = nuevoPedido.PedidoId }, nuevoPedido);
+            var nuevoPedidoDTO = await _pedidoService.CreatePedidoAsync(pedido); // Mapeo y creación del pedido
+            return CreatedAtAction(nameof(GetById), new { id = nuevoPedidoDTO.PedidoId }, nuevoPedidoDTO);
         }
 
         // Actualizar el estado de un pedido
@@ -54,7 +61,8 @@ namespace LaboratorioApi.Controllers
         public async Task<IActionResult> GetEstadoPedidos()
         {
             var estados = await _pedidoService.GetEstadoPedidosAsync();
-            return Ok(estados);
+            var estadosDTO = _mapper.Map<List<EstadoPedidoDTO>>(estados);  // Mapear a DTO
+            return Ok(estadosDTO);
         }
     }
 }

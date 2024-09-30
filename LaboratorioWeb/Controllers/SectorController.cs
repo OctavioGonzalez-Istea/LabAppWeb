@@ -1,6 +1,8 @@
 ﻿using Entidades;
 using Microsoft.AspNetCore.Mvc;
-using LaboratorioApi.Services;
+using AutoMapper;
+using LaboratorioWeb.DTO;
+using LaboratorioWeb.Services.Interfase;
 
 namespace LaboratorioApi.Controllers
 {
@@ -8,26 +10,31 @@ namespace LaboratorioApi.Controllers
     [Route("api/[controller]")]
     public class SectorController : ControllerBase
     {
-        private readonly SectorService _sectorService;
+        private readonly ISectorService _sectorService;
+        private readonly IMapper _mapper;
 
-        public SectorController(SectorService sectorService)
+        public SectorController(ISectorService sectorService, IMapper mapper)
         {
             _sectorService = sectorService;
+            _mapper = mapper;
         }
 
         // Crear un sector
         [HttpPost]
-        public async Task<IActionResult> CrearSector([FromBody] Sector sector)
+        public async Task<IActionResult> CrearSector([FromBody] SectorDTO sectorDTO)
         {
+            var sector = _mapper.Map<Sector>(sectorDTO);  // Mapear de DTO a entidad
             var nuevoSector = await _sectorService.CrearSectorAsync(sector);
-            return CreatedAtAction(nameof(VerEmpleadosPorSector), new { SectorId = nuevoSector.SectorId }, nuevoSector);
+            var nuevoSectorDTO = _mapper.Map<SectorDTO>(nuevoSector);  // Mapear de entidad a DTO
+            return CreatedAtAction(nameof(VerEmpleadosPorSector), new { SectorId = nuevoSectorDTO.SectorId }, nuevoSectorDTO);
         }
 
         // Editar un sector
         [HttpPut("{SectorId}")]
-        public async Task<IActionResult> EditarSector(int SectorId, [FromBody] Sector sector)
+        public async Task<IActionResult> EditarSector(int SectorId, [FromBody] SectorDTO sectorDTO)
         {
-            var resultado = await _sectorService.EditarSectorAsync(SectorId, sector);
+            var sectorActualizado = _mapper.Map<Sector>(sectorDTO);  // Mapear de DTO a entidad
+            var resultado = await _sectorService.EditarSectorAsync(SectorId, sectorActualizado);
             if (!resultado) return NotFound();
             return NoContent();
         }
@@ -56,7 +63,8 @@ namespace LaboratorioApi.Controllers
         {
             var empleados = await _sectorService.VerEmpleadosPorSectorAsync(SectorId);
             if (empleados == null || empleados.Count == 0) return NotFound();
-            return Ok(empleados);
+            var empleadosDTO = _mapper.Map<List<EmpleadoDTO>>(empleados);  // Mapear de entidad a DTO
+            return Ok(empleadosDTO);
         }
     }
 }

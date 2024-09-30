@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb\\LaboratorioWeb\\",
+  "WorkspaceRootPath": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|c:\\users\\octavio gonzalez\\desktop\\laboratorioweb\\laboratorioweb\\laboratorioweb\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|solutionrelative:laboratorioweb\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|c:\\users\\octavio gonzalez\\desktop\\laboratorioweb-ultimaversion\\laboratorioweb\\laboratorioweb\\laboratorioweb\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|solutionrelative:laboratorioweb\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|c:\\users\\octavio gonzalez\\desktop\\laboratorioweb\\laboratorioweb\\laboratorioweb\\controllers\\comandacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|solutionrelative:laboratorioweb\\controllers\\comandacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|c:\\users\\octavio gonzalez\\desktop\\laboratorioweb-ultimaversion\\laboratorioweb\\laboratorioweb\\laboratorioweb\\mappers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|solutionrelative:laboratorioweb\\mappers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|c:\\users\\octavio gonzalez\\desktop\\laboratorioweb\\laboratorioweb\\laboratorioweb\\mappers\\comandamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|solutionrelative:laboratorioweb\\mappers\\comandamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|c:\\users\\octavio gonzalez\\desktop\\laboratorioweb-ultimaversion\\laboratorioweb\\laboratorioweb\\laboratorioweb\\services\\interfase\\ipedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|solutionrelative:laboratorioweb\\services\\interfase\\ipedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|c:\\users\\octavio gonzalez\\desktop\\laboratorioweb-ultimaversion\\laboratorioweb\\laboratorioweb\\laboratorioweb\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|solutionrelative:laboratorioweb\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|c:\\users\\octavio gonzalez\\desktop\\laboratorioweb-ultimaversion\\laboratorioweb\\laboratorioweb\\laboratorioweb\\entidades\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22405231-AE86-4396-B4ED-776F337B416D}|LaboratorioWeb\\LaboratorioWeb.csproj|solutionrelative:laboratorioweb\\entidades\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmpleadoController.cs",
-              "DocumentMoniker": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Controllers\\EmpleadoController.cs",
-              "RelativeDocumentMoniker": "LaboratorioWeb\\Controllers\\EmpleadoController.cs",
-              "ToolTip": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Controllers\\EmpleadoController.cs",
-              "RelativeToolTip": "LaboratorioWeb\\Controllers\\EmpleadoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:13:01.922Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ComandaController.cs",
-              "DocumentMoniker": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Controllers\\ComandaController.cs",
-              "RelativeDocumentMoniker": "LaboratorioWeb\\Controllers\\ComandaController.cs",
-              "ToolTip": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Controllers\\ComandaController.cs",
-              "RelativeToolTip": "LaboratorioWeb\\Controllers\\ComandaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Entidades\\Pedido.cs",
+              "RelativeDocumentMoniker": "LaboratorioWeb\\Entidades\\Pedido.cs",
+              "ToolTip": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Entidades\\Pedido.cs",
+              "RelativeToolTip": "LaboratorioWeb\\Entidades\\Pedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:09:10.178Z",
+              "WhenOpened": "2024-09-30T19:04:58.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ComandaMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Mappers\\ComandaMapper.cs",
-              "RelativeDocumentMoniker": "LaboratorioWeb\\Mappers\\ComandaMapper.cs",
-              "ToolTip": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Mappers\\ComandaMapper.cs",
-              "RelativeToolTip": "LaboratorioWeb\\Mappers\\ComandaMapper.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAwwFAAAAARAAAAAAAAAA==",
+              "Title": "IPedidoService.cs",
+              "DocumentMoniker": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Services\\Interfase\\IPedidoService.cs",
+              "RelativeDocumentMoniker": "LaboratorioWeb\\Services\\Interfase\\IPedidoService.cs",
+              "ToolTip": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Services\\Interfase\\IPedidoService.cs",
+              "RelativeToolTip": "LaboratorioWeb\\Services\\Interfase\\IPedidoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:08:05.979Z",
+              "WhenOpened": "2024-09-30T19:04:19.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Mappers\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "LaboratorioWeb\\Mappers\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Mappers\\MappingProfile.cs",
+              "RelativeToolTip": "LaboratorioWeb\\Mappers\\MappingProfile.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwCoAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T18:54:51.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PedidoController.cs",
+              "DocumentMoniker": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Controllers\\PedidoController.cs",
+              "RelativeDocumentMoniker": "LaboratorioWeb\\Controllers\\PedidoController.cs",
+              "ToolTip": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Controllers\\PedidoController.cs",
+              "RelativeToolTip": "LaboratorioWeb\\Controllers\\PedidoController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvy0AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T18:55:31.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PedidoService.cs",
+              "DocumentMoniker": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Services\\PedidoService.cs",
+              "RelativeDocumentMoniker": "LaboratorioWeb\\Services\\PedidoService.cs",
+              "ToolTip": "C:\\Users\\Octavio Gonzalez\\Desktop\\LaboratorioWeb-ultimaversion\\LaboratorioWeb\\LaboratorioWeb\\LaboratorioWeb\\Services\\PedidoService.cs",
+              "RelativeToolTip": "LaboratorioWeb\\Services\\PedidoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T18:54:31.422Z",
               "EditorCaption": ""
             }
           ]

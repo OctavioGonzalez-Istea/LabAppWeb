@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LaboratorioWeb.Migrations
 {
     [DbContext(typeof(RestauranteContext))]
-    [Migration("20240927232638_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240928183157_inicial")]
+    partial class inicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -312,7 +312,7 @@ namespace LaboratorioWeb.Migrations
                             Cantidad = 2,
                             ComandaId = 1,
                             EstadoId = 1,
-                            FechaCreacion = new DateTime(2024, 9, 27, 20, 26, 38, 256, DateTimeKind.Local).AddTicks(4646),
+                            FechaCreacion = new DateTime(2024, 9, 28, 15, 31, 57, 22, DateTimeKind.Local).AddTicks(7665),
                             ProductoId = 1
                         },
                         new
@@ -321,8 +321,8 @@ namespace LaboratorioWeb.Migrations
                             Cantidad = 2,
                             ComandaId = 2,
                             EstadoId = 2,
-                            FechaCreacion = new DateTime(2024, 9, 27, 20, 26, 38, 256, DateTimeKind.Local).AddTicks(4659),
-                            FechaFinalizacion = new DateTime(2024, 9, 27, 20, 56, 38, 256, DateTimeKind.Local).AddTicks(4660),
+                            FechaCreacion = new DateTime(2024, 9, 28, 15, 31, 57, 22, DateTimeKind.Local).AddTicks(7684),
+                            FechaFinalizacion = new DateTime(2024, 9, 28, 16, 1, 57, 22, DateTimeKind.Local).AddTicks(7685),
                             ProductoId = 1
                         },
                         new
@@ -331,8 +331,8 @@ namespace LaboratorioWeb.Migrations
                             Cantidad = 2,
                             ComandaId = 3,
                             EstadoId = 3,
-                            FechaCreacion = new DateTime(2024, 9, 27, 20, 26, 38, 256, DateTimeKind.Local).AddTicks(4665),
-                            FechaFinalizacion = new DateTime(2024, 9, 27, 20, 46, 38, 256, DateTimeKind.Local).AddTicks(4665),
+                            FechaCreacion = new DateTime(2024, 9, 28, 15, 31, 57, 22, DateTimeKind.Local).AddTicks(7691),
+                            FechaFinalizacion = new DateTime(2024, 9, 28, 15, 51, 57, 22, DateTimeKind.Local).AddTicks(7691),
                             ProductoId = 1
                         });
                 });

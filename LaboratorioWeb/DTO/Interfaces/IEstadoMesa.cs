@@ -1,6 +1,8 @@
-﻿namespace LaboratorioWeb.DTO.Interfaces
+﻿namespace LaboratorioWeb.Interfaces
 {
-    public interface IEstadoMesa
+    public interface IEstadoMesaDTO
     {
+        int EstadoId { get; set; }
+        string Descripcion { get; set; }
     }
 }

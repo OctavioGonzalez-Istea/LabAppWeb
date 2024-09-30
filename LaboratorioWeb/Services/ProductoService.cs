@@ -2,62 +2,54 @@
 using Entidades;
 using LaboratorioApi.Data;
 using LaboratorioWeb.DTO;
-//using LaboratorioWeb.Mappers;
+using LaboratorioWeb.Services.Interfase;
 using Microsoft.EntityFrameworkCore;
 
 namespace LaboratorioApi.Services
 {
-    public class ProductoService
+    public class ProductoService : IProductoService
     {
         private readonly RestauranteContext _context;
         private readonly ILogger<ProductoService> _logger;
         private readonly IMapper _mapper;
 
-        public ProductoService(RestauranteContext context, ILogger<ProductoService>logger, IMapper mapper)
+        public ProductoService(RestauranteContext context, ILogger<ProductoService> logger, IMapper mapper)
         {
             _context = context;
             _logger = logger;
             _mapper = mapper;
         }
 
-        public void CargarProducto(ProductoDTO productoDTO) 
-        {
-            Producto producto = this._mapper.Map<Producto>(productoDTO);
-            this._context.Productos.Add(producto);
-            this._context.SaveChanges();
-        }
-        
         // Obtener todos los productos
-        public async Task<List<Producto>> GetAllProductosAsync()
+        public async Task<List<ProductoDTO>> GetAllProductosAsync()
         {
-            return await _context.Productos.Include(p => p.Sector).ToListAsync();
+            var productos = await _context.Productos.Include(p => p.Sector).ToListAsync();
+            return _mapper.Map<List<ProductoDTO>>(productos); // Mapeo de entidad a DTO
         }
 
         // Obtener un producto por ID
-        public async Task<Producto> GetProductoByIdAsync(int id)
+        public async Task<ProductoDTO> GetProductoByIdAsync(int id)
         {
-            return await _context.Productos.Include(p => p.Sector).FirstOrDefaultAsync(p => p.ProductoId == id);
+            var producto = await _context.Productos.Include(p => p.Sector).FirstOrDefaultAsync(p => p.ProductoId == id);
+            return _mapper.Map<ProductoDTO>(producto); // Mapeo de entidad a DTO
         }
 
         // Crear un nuevo producto
-        public async Task<Producto> CreateProductoAsync(Producto producto)
+        public async Task<ProductoDTO> CreateProductoAsync(ProductoDTO productoDTO)
         {
+            var producto = _mapper.Map<Producto>(productoDTO); // Mapeo de DTO a entidad
             _context.Productos.Add(producto);
             await _context.SaveChangesAsync();
-            return producto;
+            return _mapper.Map<ProductoDTO>(producto); // Mapeo de entidad a DTO
         }
 
         // Actualizar un producto existente
-        public async Task<bool> UpdateProductoAsync(int id, Producto productoActualizado)
+        public async Task<bool> UpdateProductoAsync(int id, ProductoDTO productoActualizadoDTO)
         {
             var producto = await _context.Productos.FindAsync(id);
             if (producto == null) return false;
 
-            // Actualizamos las propiedades del producto
-            producto.Descripcion = productoActualizado.Descripcion;
-            producto.Precio = productoActualizado.Precio;
-            producto.Stock = productoActualizado.Stock;
-            producto.SectorId = productoActualizado.SectorId;
+            _mapper.Map(productoActualizadoDTO, producto); // Mapeo de DTO a entidad
 
             await _context.SaveChangesAsync();
             return true;

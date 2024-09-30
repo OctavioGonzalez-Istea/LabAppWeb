@@ -1,6 +1,7 @@
-﻿using Entidades;
-using Microsoft.AspNetCore.Mvc;
-using LaboratorioApi.Services; 
+﻿using Microsoft.AspNetCore.Mvc;
+using AutoMapper;
+using LaboratorioWeb.DTO;
+using LaboratorioWeb.Services.Interfase;
 
 namespace LaboratorioApi.Controllers
 {
@@ -8,11 +9,13 @@ namespace LaboratorioApi.Controllers
     [Route("api/[controller]")]
     public class ProductoController : ControllerBase
     {
-        private readonly ProductoService _productoService;
+        private readonly IProductoService _productoService;
+        private readonly IMapper _mapper;
 
-        public ProductoController(ProductoService productoService)
+        public ProductoController(IProductoService productoService, IMapper mapper)
         {
             _productoService = productoService;
+            _mapper = mapper;
         }
 
         // Obtener todos los productos
@@ -20,7 +23,7 @@ namespace LaboratorioApi.Controllers
         public async Task<IActionResult> GetAll()
         {
             var productos = await _productoService.GetAllProductosAsync();
-            return Ok(productos);
+            return Ok(productos); // El servicio ya devuelve DTOs
         }
 
         // Obtener un producto por ID
@@ -29,22 +32,22 @@ namespace LaboratorioApi.Controllers
         {
             var producto = await _productoService.GetProductoByIdAsync(id);
             if (producto == null) return NotFound();
-            return Ok(producto);
+            return Ok(producto); // El servicio ya devuelve DTOs
         }
 
         // Crear un nuevo producto
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Producto producto)
+        public async Task<IActionResult> Create([FromBody] ProductoDTO productoDTO)
         {
-            var nuevoProducto = await _productoService.CreateProductoAsync(producto);
-            return CreatedAtAction(nameof(GetById), new { id = nuevoProducto.ProductoId }, nuevoProducto);
+            var nuevoProductoDTO = await _productoService.CreateProductoAsync(productoDTO);
+            return CreatedAtAction(nameof(GetById), new { id = nuevoProductoDTO.ProductoId }, nuevoProductoDTO);
         }
 
         // Actualizar un producto existente
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Producto producto)
+        public async Task<IActionResult> Update(int id, [FromBody] ProductoDTO productoDTO)
         {
-            var resultado = await _productoService.UpdateProductoAsync(id, producto);
+            var resultado = await _productoService.UpdateProductoAsync(id, productoDTO);
             if (!resultado) return NotFound();
             return NoContent();
         }
