@@ -9,5 +9,8 @@ namespace LaboratorioWeb.Services.Interfase
         Task<ProductoDTO> CreateProductoAsync(ProductoDTO productoDTO);
         Task<bool> UpdateProductoAsync(int id, ProductoDTO productoActualizado);
         Task<bool> DeleteProductoAsync(int id);
+        Task<bool> ExisteProducto(int ProductoId);
+        Task<bool> ProductoConStock(int ProductoId, int Cantidad);
+        Task AjustarStock(int ProductoId, int Cantidad);
     }
 }

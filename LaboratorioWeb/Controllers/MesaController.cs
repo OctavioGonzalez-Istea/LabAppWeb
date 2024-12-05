@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using LaboratorioApi.Services;
 using AutoMapper;
 using LaboratorioWeb.DTO;
+using LaboratorioWeb.Services.Interfase;
 
 namespace LaboratorioApi.Controllers
 {
@@ -10,10 +11,10 @@ namespace LaboratorioApi.Controllers
     [Route("api/[controller]")]
     public class MesaController : ControllerBase
     {
-        private readonly MesaService _mesaService;
+        private readonly IMesaService _mesaService;
         private readonly IMapper _mapper;
 
-        public MesaController(MesaService mesaService, IMapper mapper)
+        public MesaController(IMesaService mesaService, IMapper mapper)
         {
             _mesaService = mesaService;
             _mapper = mapper;
@@ -57,12 +58,21 @@ namespace LaboratorioApi.Controllers
         }
 
         // Cambiar el estado de una mesa
-        [HttpPut("{id}/estado")]
-        public async Task<IActionResult> UpdateEstado(int id, [FromBody] int nuevoEstado)
+        [HttpPut("estado/{id}/Empleado/{EmpleadoId}")]
+        public async Task<IActionResult> UpdateEstado(int id,int EmpleadoId, [FromBody] int nuevoEstado)
         {
+            if (nuevoEstado == 4 && !(await _mesaService.ValidarSocio(EmpleadoId))) //Checkeamos que el usuario si quiere cerrar una mesa sea un socio.
+            {
+                return BadRequest("No tiene permiso para cerrar la mesa");
+            }
+            else if (nuevoEstado != 4 && !(await _mesaService.ValidarMozoSocio(EmpleadoId))) //Checkeamos que el usuario si quiere cerrar una mesa sea un socio.
+            {
+                return BadRequest("No tiene permiso para modificar el estado de la mesa");
+            }
             var resultado = await _mesaService.CambiarEstadoMesaAsync(id, nuevoEstado);
             if (!resultado) return NotFound();
             return NoContent();
         }
+
     }
 }

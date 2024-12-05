@@ -1,4 +1,5 @@
 ﻿using LaboratorioWeb.DTO;
+using Microsoft.EntityFrameworkCore;
 
 namespace LaboratorioWeb.Services.Interfase
 {
@@ -15,5 +16,11 @@ namespace LaboratorioWeb.Services.Interfase
 
         // Cambiar el estado de una mesa
         Task<bool> CambiarEstadoMesaAsync(int mesaId, int nuevoEstado);
+        public Task<bool> MesaLibre(int mesaId); // Verificamos que la mesa este libre
+        public Task<bool> ExisteMesa(int mesaId); // Verificamos que exista la mesa
+        public Task ActualizarEstadoMesa(int MesaId, int EstadoId); // Actualizamos el Estado de la Mesa
+        public Task<bool> ValidarSocio(int SocioId); // Checkeamos que el usuario a cerrar mesa es un socio
+        public Task<bool> ValidarMozoSocio(int EmpleadoId); // Checkeamos que el usuario a cerrar mesa es un socio
+       
     }
 }

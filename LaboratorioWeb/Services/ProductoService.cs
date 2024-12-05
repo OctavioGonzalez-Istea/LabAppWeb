@@ -4,6 +4,7 @@ using LaboratorioApi.Data;
 using LaboratorioWeb.DTO;
 using LaboratorioWeb.Services.Interfase;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.Design;
 
 namespace LaboratorioApi.Services
 {
@@ -64,6 +65,37 @@ namespace LaboratorioApi.Services
             _context.Productos.Remove(producto);
             await _context.SaveChangesAsync();
             return true;
+        }
+
+        public async Task<bool> ExisteProducto(int ProductoId)
+        {
+            // Consulta para verificar si el producto existe en la base de datos
+            return await _context.Productos.AnyAsync(m => m.ProductoId == ProductoId);
+        }
+
+        public async Task<bool> ProductoConStock(int ProductoId, int Cantidad)
+        {
+            // Recuperar el producto con el ID proporcionado
+            Producto producto = await _context.Productos
+                                         .Where(p => p.ProductoId == ProductoId)
+                                         .FirstOrDefaultAsync();
+
+            // Comparamos el stock disponible con la cantidad solicitada
+            return  producto.Stock >= Cantidad;
+        }
+
+        public async Task AjustarStock(int ProductoId, int Cantidad)
+        {
+            // Recuperar el producto de la base de datos
+            Producto? producto = await _context.Productos
+                                         .FirstOrDefaultAsync(p => p.ProductoId == ProductoId);
+
+            // Ajustar el stock
+            producto.Stock -= Cantidad;
+
+            // Guardar los cambios en la base de datos
+            _context.Productos.Update(producto);
+            await _context.SaveChangesAsync();
         }
     }
 }

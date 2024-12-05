@@ -28,8 +28,8 @@ namespace LaboratorioApi.Services
         public async Task<EmpleadoDTO> GetEmpleadoByIdAsync(int id)
         {
             var empleado = await _context.Empleados
-                .Include(e => e.Sector)  // Solo incluir la relación si es necesaria
-                .Include(e => e.Rol)
+                //.Include(e => e.Sector)  // Solo incluir la relación si es necesaria
+                //.Include(e => e.Rol)
                 .FirstOrDefaultAsync(e => e.EmpleadoId == id);
 
             return _mapper.Map<EmpleadoDTO>(empleado); // Mapear de entidad a DTO

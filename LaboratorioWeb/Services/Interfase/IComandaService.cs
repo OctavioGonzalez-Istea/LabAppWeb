@@ -15,5 +15,11 @@ namespace LaboratorioApi.Services
 
         // Actualizar una comanda existente
         Task<bool> UpdateComandaAsync(int id, ComandaDTO comandaActualizadaDTO); // Recibir un DTO
+        public Task<string> ValidarMesa(int MesaId); // Validamos que la Mesa se encuentre Libre
+
+        public Task<bool> ExisteComanda(int ComandaId); // Verificamos que exista la mesa
+        public Task ActualizarEstadoMesa(int MesaId, int EstadoId); // Actualizamos el Estado de la Mesa
+
+        public Task<bool> ValidarMozo(int MozoId); // Validamos que la Mesa se encuentre Libre
     }
 }

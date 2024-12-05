@@ -18,6 +18,7 @@ namespace LaboratorioApi.Controllers
             _mapper = mapper;
         }
 
+
         // Obtener una comanda por ID
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -29,9 +30,21 @@ namespace LaboratorioApi.Controllers
 
         // Crear una nueva comanda
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] ComandaDTO comandaDTO)
+        public async Task<IActionResult> Create([FromBody] ComandaDTO comandaDTO, int EmpleadoId)
         {
+            if (EmpleadoId == 0 || !(await _comandaService.ValidarMozo(EmpleadoId)))
+            {
+                return BadRequest("El empleado no tiene permiso para iniciar una comanda ");
+            }
+
+            string response = await _comandaService.ValidarMesa(comandaDTO.MesaId);
+            if (!string.IsNullOrEmpty(response))
+            {
+                return BadRequest(response);
+            }
+           
             var nuevaComandaDTO = await _comandaService.CreateComandaAsync(comandaDTO);
+            await _comandaService.ActualizarEstadoMesa(comandaDTO.MesaId, 1);
             return CreatedAtAction(nameof(GetById), new { id = nuevaComandaDTO.ComandaId }, nuevaComandaDTO);
         }
 
@@ -43,5 +56,6 @@ namespace LaboratorioApi.Controllers
             if (!resultado) return NotFound();
             return NoContent();
         }
+
     }
 }

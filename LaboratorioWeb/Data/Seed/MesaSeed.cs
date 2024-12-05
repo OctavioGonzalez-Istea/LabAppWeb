@@ -9,9 +9,9 @@ namespace LaboratorioWeb.Data.Seed
         public static void Seed(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Mesa>().HasData(
-                new  { MesaId = 1, Nombre = "Cliente 1", EstadoId = 1 }, // Esperando pedido
-                new  { MesaId = 2, Nombre = "Cliente 2", EstadoId = 2 }, // Comiendo
-                new  { MesaId = 3, Nombre = "Cliente 3", EstadoId = 3 }  // Pagando
+                new  { MesaId = 1, Nombre = "M0001", EstadoId = 1 }, // Esperando pedido
+                new  { MesaId = 2, Nombre = "M0002", EstadoId = 2 }, // Comiendo
+                new  { MesaId = 3, Nombre = "M0003", EstadoId = 3 }  // Pagando
             );
         }
 

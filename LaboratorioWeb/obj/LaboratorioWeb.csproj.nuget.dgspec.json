@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Octavio Gonzalez\\Documents\\LabAppWeb\\LaboratorioWeb\\LaboratorioWeb.csproj": {}
+    "C:\\Users\\Nubiral\\Desktop\\LabAppWeb-main-Original\\LabAppWeb-main-Original\\LabAppWeb-main\\LaboratorioWeb\\LaboratorioWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Octavio Gonzalez\\Documents\\LabAppWeb\\LaboratorioWeb\\LaboratorioWeb.csproj": {
+    "C:\\Users\\Nubiral\\Desktop\\LabAppWeb-main-Original\\LabAppWeb-main-Original\\LabAppWeb-main\\LaboratorioWeb\\LaboratorioWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Octavio Gonzalez\\Documents\\LabAppWeb\\LaboratorioWeb\\LaboratorioWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Nubiral\\Desktop\\LabAppWeb-main-Original\\LabAppWeb-main-Original\\LabAppWeb-main\\LaboratorioWeb\\LaboratorioWeb.csproj",
         "projectName": "LaboratorioWeb",
-        "projectPath": "C:\\Users\\Octavio Gonzalez\\Documents\\LabAppWeb\\LaboratorioWeb\\LaboratorioWeb.csproj",
-        "packagesPath": "C:\\Users\\Octavio Gonzalez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Octavio Gonzalez\\Documents\\LabAppWeb\\LaboratorioWeb\\obj\\",
+        "projectPath": "C:\\Users\\Nubiral\\Desktop\\LabAppWeb-main-Original\\LabAppWeb-main-Original\\LabAppWeb-main\\LaboratorioWeb\\LaboratorioWeb.csproj",
+        "packagesPath": "C:\\Users\\Nubiral\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nubiral\\Desktop\\LabAppWeb-main-Original\\LabAppWeb-main-Original\\LabAppWeb-main\\LaboratorioWeb\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Octavio Gonzalez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Nubiral\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

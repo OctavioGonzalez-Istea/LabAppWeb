@@ -146,6 +146,44 @@ namespace LaboratorioWeb.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Entidades.Encuesta", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("ComandaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Comentario")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaEncuesta")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("MesaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PuntuacionCocinero")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PuntuacionMesa")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PuntuacionMozo")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PuntuacionRestaurante")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Encuesta");
+                });
+
             modelBuilder.Entity("Entidades.EstadoMesa", b =>
                 {
                     b.Property<int>("EstadoId")
@@ -250,19 +288,19 @@ namespace LaboratorioWeb.Migrations
                         {
                             MesaId = 1,
                             EstadoId = 1,
-                            Nombre = "Cliente 1"
+                            Nombre = "M0001"
                         },
                         new
                         {
                             MesaId = 2,
                             EstadoId = 2,
-                            Nombre = "Cliente 2"
+                            Nombre = "M0002"
                         },
                         new
                         {
                             MesaId = 3,
                             EstadoId = 3,
-                            Nombre = "Cliente 3"
+                            Nombre = "M0003"
                         });
                 });
 
@@ -309,7 +347,7 @@ namespace LaboratorioWeb.Migrations
                             Cantidad = 2,
                             ComandaId = 1,
                             EstadoId = 1,
-                            FechaCreacion = new DateTime(2024, 9, 28, 15, 31, 57, 22, DateTimeKind.Local).AddTicks(7665),
+                            FechaCreacion = new DateTime(2024, 11, 10, 12, 7, 27, 756, DateTimeKind.Local).AddTicks(99),
                             ProductoId = 1
                         },
                         new
@@ -318,8 +356,8 @@ namespace LaboratorioWeb.Migrations
                             Cantidad = 2,
                             ComandaId = 2,
                             EstadoId = 2,
-                            FechaCreacion = new DateTime(2024, 9, 28, 15, 31, 57, 22, DateTimeKind.Local).AddTicks(7684),
-                            FechaFinalizacion = new DateTime(2024, 9, 28, 16, 1, 57, 22, DateTimeKind.Local).AddTicks(7685),
+                            FechaCreacion = new DateTime(2024, 11, 10, 12, 7, 27, 756, DateTimeKind.Local).AddTicks(118),
+                            FechaFinalizacion = new DateTime(2024, 11, 10, 12, 37, 27, 756, DateTimeKind.Local).AddTicks(119),
                             ProductoId = 1
                         },
                         new
@@ -328,8 +366,8 @@ namespace LaboratorioWeb.Migrations
                             Cantidad = 2,
                             ComandaId = 3,
                             EstadoId = 3,
-                            FechaCreacion = new DateTime(2024, 9, 28, 15, 31, 57, 22, DateTimeKind.Local).AddTicks(7691),
-                            FechaFinalizacion = new DateTime(2024, 9, 28, 15, 51, 57, 22, DateTimeKind.Local).AddTicks(7691),
+                            FechaCreacion = new DateTime(2024, 11, 10, 12, 7, 27, 756, DateTimeKind.Local).AddTicks(125),
+                            FechaFinalizacion = new DateTime(2024, 11, 10, 12, 27, 27, 756, DateTimeKind.Local).AddTicks(126),
                             ProductoId = 1
                         });
                 });
@@ -530,7 +568,7 @@ namespace LaboratorioWeb.Migrations
                     b.HasOne("Entidades.Comanda", "Comanda")
                         .WithMany("Pedidos")
                         .HasForeignKey("ComandaId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Entidades.EstadoPedido", "EstadoPedido")

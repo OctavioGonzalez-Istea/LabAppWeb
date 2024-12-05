@@ -23,6 +23,7 @@ builder.Services.AddScoped<IPedidoService, PedidoService>();
 builder.Services.AddScoped<ISectorService, SectorService>();
 builder.Services.AddScoped<IRolService, RolService>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
+builder.Services.AddScoped<IEncuestaService, EncuestaService>();
 
 // Swagger configuration
 builder.Services.AddEndpointsApiExplorer();
